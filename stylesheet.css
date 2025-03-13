@@ -31,14 +31,14 @@ body {
   border-radius: 5px;
   cursor: pointer;
   overflow: hidden; /* Ensures the image doesn't overflow outside the button */
-  width: 200px; /* Set a specific width for the button */
-  height: 200px; /* Set a specific height for the button */
+  width: 400px; /* Set a specific width for the button */
+  height: 400px /* Set a specific height for the button */
 }
 
 #click-btn img {
   width: 100%; /* Make the image fill the button */
   height: 100%; /* Make the image fill the button */
-  object-fit: cover; /* Ensures the image covers the button without distortion */
+  object-fit: contain; /* Ensures the image covers the button without distortion */
   border-radius: 5px; /* Optional: rounds the corners of the image */
 }
 
