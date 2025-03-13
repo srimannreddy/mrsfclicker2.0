@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#game-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#click-btn {
+  position: relative;
+  font-size: 20px;
+  padding: 0; /* Remove padding so image fits perfectly */
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden; /* Ensures the image doesn't overflow outside the button */
+  width: 200px; /* Set a specific width for the button */
+  height: 200px; /* Set a specific height for the button */
+}
+
+#click-btn img {
+  width: 100%; /* Make the image fill the button */
+  height: 100%; /* Make the image fill the button */
+  object-fit: cover; /* Ensures the image covers the button without distortion */
+  border-radius: 5px; /* Optional: rounds the corners of the image */
+}
+
+#click-btn:hover {
+  background-color: #45a049;
+}
+
+.upgrade {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.upgrade button {
+  font-size: 16px;
+  padding: 10px;
+  margin-left: 10px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upgrade button:hover {
+  background-color: #0b7dda;
+}
+
+.upgrade p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+h3 {
+  margin-top: 20px;
+  color: #333;
+}
+
+#money-container {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Add styling for upgrade images */
+.upgrade-img {
+  width: 40px; /* Adjust to fit nicely */
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
