@@ -11,54 +11,88 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
 }
 
 #game-container {
+  display: flex;
+  justify-content: space-between; /* Space out left and right divs */
+  width: 80%;
+  max-width: 1200px;
+  min-width: 900px;
+}
+
+#left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%; /* Take up 45% of the width */
   text-align: center;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#left-side h1 {
+  font-size: 36px;
+  margin-bottom: 20px; /* Space between title and button */
+}
+
+#money-container {
+  font-size: 24px;
+  margin-bottom: 20px; /* Space between money text and the click button */
 }
 
 #click-btn {
   position: relative;
   font-size: 20px;
-  padding: 0; /* Remove padding so image fits perfectly */
-  background-color: #4CAF50;
+  padding: 0;
+  background-color: #00aaff;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  overflow: hidden; /* Ensures the image doesn't overflow outside the button */
+  overflow: hidden;
   width: 400px; /* Set a specific width for the button */
-  height: 400px /* Set a specific height for the button */
+  height: 400px; /* Set a specific height for the button */
 }
 
 #click-btn img {
-  width: 100%; /* Make the image fill the button */
-  height: 100%; /* Make the image fill the button */
-  object-fit: contain; /* Ensures the image covers the button without distortion */
-  border-radius: 5px; /* Optional: rounds the corners of the image */
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 5px;
 }
 
 #click-btn:hover {
-  background-color: #45a049;
+  background-color: #0092db;
+}
+
+#right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 45%; /* Take up 45% of the width */
+  margin-top: 40px; /* Space between left side and right side */
+}
+
+#right-side h3 {
+  margin-top: 20px;
+  color: #333;
 }
 
 .upgrade {
   margin: 20px 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: left;
+  width: 100%; /* Ensure upgrades take full width */
 }
 
 .upgrade button {
   font-size: 16px;
   padding: 10px;
   margin-left: 10px;
-  background-color: #2196F3;
+  background-color: #4caf50;
   color: white;
   border: none;
   border-radius: 5px;
@@ -67,7 +101,7 @@ body {
 }
 
 .upgrade button:hover {
-  background-color: #0b7dda;
+  background-color: #439745;
 }
 
 .upgrade p {
@@ -75,20 +109,15 @@ body {
   margin-top: 5px;
 }
 
-h3 {
-  margin-top: 20px;
-  color: #333;
-}
-
-#money-container {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-/* Add styling for upgrade images */
 .upgrade-img {
-  width: 40px; /* Adjust to fit nicely */
   height: 40px;
   margin-right: 10px;
   border-radius: 5px;
+}
+
+/* Optional: Style the 'cursor' and 'mustache' images for consistency */
+#glasses-img, #mustache-img, #computer-img, #cursor-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }

@@ -8,42 +8,46 @@
 </head>
 <body>
   <div id="game-container">
-    <h1>Mr. SF Clicker</h1>
-    <div id="money-container">
-      <p>Money: <span id="money">0</span> $</p>
-    </div>
-    <div id="clicker">
-      <!-- Button now contains the image of Mr. SF -->
-      <button id="click-btn">
-        <img src="mrsf.png" alt="Mr. SF" id="mr-sf-img" />
-      </button>
-    </div>
-    
-    <div id="upgrades">
-      <h3>Upgrades</h3>
-      <div id="glasses-upgrade" class="upgrade">
-        <img src="" id="glasses-img" alt="Glasses Upgrade" class="upgrade-img">
-        <button>Buy Glasses (+1 per click) - 50$</button>
-        <p>Cost: 50$</p>
+    <!-- Left side: contains text and Mr. SF button -->
+    <div id="left-side">
+      <h1>Mr. SF Clicker</h1>
+      <div id="money-container">
+        <p>Money: <span id="money">0</span> $</p>
       </div>
-      <div id="mustache-upgrade" class="upgrade">
-        <img src="" id="mustache-img" alt="Mustache Upgrade" class="upgrade-img">
-        <button>Buy Mustache (+5 per click) - 200$</button>
-        <p>Cost: 200$</p>
-      </div>
-      <div id="computer-upgrade" class="upgrade">
-        <img src="" id="computer-img" alt="Computer Upgrade" class="upgrade-img">
-        <button>Buy Computer (+10 per click) - 500$</button>
-        <p>Cost: 500$</p>
+      <div id="clicker">
+        <button id="click-btn">
+          <img src="mrsf.png" alt="Mr. SF" id="mr-sf-img" />
+        </button>
       </div>
     </div>
-    
-    <div id="idle-generator">
-      <h3>Idle Money Generators</h3>
-      <div id="cursor-upgrade" class="upgrade">
-        <img src="" id="cursor-img" alt="Cursor Upgrade" class="upgrade-img">
-        <button>Upgrade Cursor (+1 per second) - 100$</button>
-        <p>Cost: 100$</p>
+
+    <!-- Right side: contains the upgrades -->
+    <div id="right-side">
+      <div id="upgrades">
+        <h3>Upgrades</h3>
+        <div id="glasses-upgrade" class="upgrade">
+          <img src="glasses.png" id="glasses-img" alt="Glasses Upgrade" class="upgrade-img">
+          <button>Buy Glasses (+1 per click)</button>
+          <p>Cost: 50$</p>
+        </div>
+        <div id="mustache-upgrade" class="upgrade">
+          <img src="mustache.png" id="mustache-img" alt="Mustache Upgrade" class="upgrade-img">
+          <button>Buy Mustache (+5 per click)</button>
+          <p>Cost: 200$</p>
+        </div>
+        <div id="computer-upgrade" class="upgrade">
+          <img src="computer.png" id="computer-img" alt="Computer Upgrade" class="upgrade-img">
+          <button>Buy Computer (+10 per click)</button>
+          <p>Cost: 500$</p>
+        </div>
+      </div>
+      <div id="idle-generator">
+        <h3>Idle Money Generators</h3>
+        <div id="cursor-upgrade" class="upgrade">
+          <img src="cursor.png" id="cursor-img" alt="Cursor Upgrade" class="upgrade-img">
+          <button>Upgrade Cursor (+1 per second)</button>
+          <p>Cost: 100$</p>
+        </div>
       </div>
     </div>
   </div>

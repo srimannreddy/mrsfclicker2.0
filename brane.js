@@ -53,6 +53,15 @@ function buyCursor() {
   }
 }
 
+function updateUpgradeButtonStates() {
+  glassesUpgrade.querySelector("button").disabled = money < 50;
+  mustacheUpgrade.querySelector("button").disabled = money < 200;
+  computerUpgrade.querySelector("button").disabled = money < 500;
+  cursorUpgrade.querySelector("button").disabled = money < 100;
+}
+
+setInterval(updateUpgradeButtonStates, 100);
+
 // Handle click event
 clickButton.addEventListener("click", () => {
   addMoney(clickValue);
