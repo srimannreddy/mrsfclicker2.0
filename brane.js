@@ -1,9 +1,7 @@
-// Game state
 let money = 0;
 let clickValue = 1;
 let cursorGeneration = 0;
 
-// Elements
 const moneyElement = document.getElementById("money");
 const clickButton = document.getElementById("click-btn");
 const glassesUpgrade = document.getElementById("glasses-upgrade");
@@ -11,7 +9,6 @@ const mustacheUpgrade = document.getElementById("mustache-upgrade");
 const computerUpgrade = document.getElementById("computer-upgrade");
 const cursorUpgrade = document.getElementById("cursor-upgrade");
 
-// Functions to update the game state
 function updateMoney() {
   moneyElement.textContent = money.toFixed(2);
 }
@@ -62,18 +59,18 @@ function updateUpgradeButtonStates() {
 
 setInterval(updateUpgradeButtonStates, 100);
 
-// Handle click event
+
 clickButton.addEventListener("click", () => {
   addMoney(clickValue);
 });
 
-// Set up upgrades
+
 glassesUpgrade.querySelector("button").addEventListener("click", buyGlasses);
 mustacheUpgrade.querySelector("button").addEventListener("click", buyMustache);
 computerUpgrade.querySelector("button").addEventListener("click", buyComputer);
 cursorUpgrade.querySelector("button").addEventListener("click", buyCursor);
 
-// Idle money generation (for cursor upgrade)
+
 setInterval(() => {
   if (cursorGeneration > 0) {
     addMoney(cursorGeneration);

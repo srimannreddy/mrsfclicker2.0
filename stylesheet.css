@@ -16,7 +16,7 @@ body {
 
 #game-container {
   display: flex;
-  justify-content: space-between; /* Space out left and right divs */
+  justify-content: space-between; 
   width: 80%;
   max-width: 1200px;
   min-width: 900px;
@@ -26,18 +26,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 45%; /* Take up 45% of the width */
+  width: 45%; 
   text-align: center;
 }
 
 #left-side h1 {
   font-size: 36px;
-  margin-bottom: 20px; /* Space between title and button */
+  margin-bottom: 20px; 
 }
 
 #money-container {
   font-size: 24px;
-  margin-bottom: 20px; /* Space between money text and the click button */
+  margin-bottom: 20px; 
 }
 
 #click-btn {
@@ -50,8 +50,8 @@ body {
   border-radius: 5px;
   cursor: pointer;
   overflow: hidden;
-  width: 400px; /* Set a specific width for the button */
-  height: 400px; /* Set a specific height for the button */
+  width: 400px; 
+  height: 400px; 
 }
 
 #click-btn img {
@@ -70,8 +70,8 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 45%; /* Take up 45% of the width */
-  margin-top: 40px; /* Space between left side and right side */
+  width: 45%; 
+  margin-top: 40px; 
 }
 
 #right-side h3 {
@@ -85,7 +85,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   text-align: left;
-  width: 100%; /* Ensure upgrades take full width */
+  width: 100%; 
 }
 
 .upgrade button {
@@ -115,7 +115,6 @@ body {
   border-radius: 5px;
 }
 
-/* Optional: Style the 'cursor' and 'mustache' images for consistency */
 #glasses-img, #mustache-img, #computer-img, #cursor-img {
   width: 40px;
   height: 40px;
