@@ -10,7 +10,7 @@ const computerUpgrade = document.getElementById("computer-upgrade");
 const cursorUpgrade = document.getElementById("cursor-upgrade");
 
 function updateMoney() {
-  moneyElement.textContent = money.toFixed(2);
+  moneyElement.textContent = money;
 }
 
 function addMoney(amount) {
