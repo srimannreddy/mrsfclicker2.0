@@ -76,3 +76,14 @@ setInterval(() => {
     addMoney(cursorGeneration);
   }
 }, 1000);
+
+const music = document.getElementById("background-music");
+
+document.addEventListener("click", () => {
+  if (music.paused) {
+    music.volume = 0.3; 
+    music.play().catch(err => {
+      console.error("Autoplay failed:", err);
+    });
+  }
+}, { once: true });
