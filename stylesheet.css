@@ -120,3 +120,30 @@ body {
   height: 40px;
   object-fit: contain;
 }
+
+
+#music-text {
+  text-align: center;       
+  margin-top: 30px;         
+  margin-bottom: 10px;      
+  font-size: 20px;          
+  font-weight: bold;      
+  color: #333;              
+}
+
+.everything {
+  display: flex;
+  flex-direction: column;
+}
+
+.music {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upgrade-info {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between button and price */
+}
